@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodcraft Academy | Pricing Plans</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .pricing-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            /* Saas Style */
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-color: var(--primary);
+        }
+
+        .pricing-card.popular {
+            background: #FDF9F3;
+            /* Light tint of tertiary/primary */
+            border: 2px solid var(--primary);
+            position: relative;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WOODCRAFT ACADEMY</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="login.html" class="nav-link m-0 fw-bold">Login</a>
+                    <a href="register.html" class="nav-link m-0 fw-bold">Signup</a>
+                    <a href="#" id="theme-toggle" class="nav-link m-0 fs-5">🌙</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title font-serif fw-bold">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column gap-3">
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="services.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+                <hr>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="register.html">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="section-padding pb-0 pt-5 mt-5">
+        <div class="container text-center animate-up">
+            <h6 class="text-primary text-uppercase letter-spacing mb-3">Investment</h6>
+            <h1 class="display-4 fw-bold">Transparent Pricing</h1>
+            <p class="lead text-secondary mx-auto mt-3" style="max-width: 700px;">No hidden materials fees. You pay for
+                the skill, the tools are on us.</p>
+        </div>
+    </header>
+
+    <!-- Pricing Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+
+                <!-- Beginner -->
+                <div class="col-lg-4">
+                    <div class="pricing-card text-center">
+                        <h4 class="mb-2">Hobbyist</h4>
+                        <p class="text-secondary small mb-4">Perfect for weekends</p>
+                        <h2 class="fw-bold display-5 mb-4">$299</h2>
+                        <ul class="list-unstyled text-start mb-5 d-inline-block mx-auto">
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Foundation Course (4 Weeks)
+                            </li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 2 Projects Included</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Tool Usage (In-class)</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Certificate of Completion
+                            </li>
+                        </ul>
+                        <a href="register.html" class="btn btn-outline-dark w-100">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Intermediate -->
+                <div class="col-lg-4">
+                    <div class="pricing-card popular text-center">
+                        <span class="popular-badge">Most Popular</span>
+                        <h4 class="mb-2">Craftsman</h4>
+                        <p class="text-secondary small mb-4">Serious skill building</p>
+                        <h2 class="fw-bold display-5 mb-4">$899</h2>
+                        <ul class="list-unstyled text-start mb-5 d-inline-block mx-auto">
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Intermediate Course (12
+                                Weeks)</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 4 Complex Projects</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Open Workshop Access</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 1-on-1 Mentorship</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Material Discount (10%)</li>
+                        </ul>
+                        <a href="register.html" class="btn btn-primary w-100">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Professional -->
+                <div class="col-lg-4">
+                    <div class="pricing-card text-center">
+                        <h4 class="mb-2">Master</h4>
+                        <p class="text-secondary small mb-4">Career focused</p>
+                        <h2 class="fw-bold display-5 mb-4">$4,500</h2>
+                        <ul class="list-unstyled text-start mb-5 d-inline-block mx-auto">
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Full Diploma (6 Months)</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Portfolio Development</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Business of Woodworking</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Dedicated Bench Space</li>
+                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Lifetime Alumni Access</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-dark w-100">Contact Us</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="mb-4 text-white font-serif">WOODCRAFT ACADEMY</h3>
+                    <p class="opacity-75">Mastering Wood. Shaping Futures. We dedicated to preserving the art of fine
+                        woodworking through structured education.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Courses</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">FAQ</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5>Newsletter</h5>
+                    <p class="opacity-75 small">Join our community for tips and updates.</p>
+                    <form class="d-flex gap-2">
+                        <input class="form-control bg-dark border-secondary text-white" type="email"
+                            placeholder="Your email">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Woodcraft Academy | Crafted with Precision</p>
+            </div>
+        </div>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle"
+            style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"><i
+                class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

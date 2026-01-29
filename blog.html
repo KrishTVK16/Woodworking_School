@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodcraft Academy | The Journal</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .blog-card-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            margin-bottom: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .blog-card:hover .blog-card-img {
+            transform: scale(1.02);
+            filter: brightness(0.9);
+        }
+
+        .blog-meta {
+            font-size: 0.85rem;
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WOODCRAFT ACADEMY</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="login.html" class="nav-link m-0 fw-bold">Login</a>
+                    <a href="register.html" class="nav-link m-0 fw-bold">Signup</a>
+                    <a href="#" id="theme-toggle" class="nav-link m-0 fs-5">🌙</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title font-serif fw-bold">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column gap-3">
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="services.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+                <hr>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="register.html">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="section-padding pb-0 pt-5 mt-5">
+        <div class="container text-center animate-up">
+            <h6 class="text-primary text-uppercase letter-spacing mb-3">The Journal</h6>
+            <h1 class="display-4 fw-bold">Knowledge & Craft</h1>
+            <p class="lead text-secondary mx-auto mt-3" style="max-width: 700px;">Stories from the workshop.</p>
+        </div>
+    </header>
+
+    <!-- Blog Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Main Featured Post -->
+                <div class="col-12 mb-4">
+                    <div class="row g-0 align-items-center bg-tertiary rounded overflow-hidden">
+                        <div class="col-lg-6">
+                            <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Featured" class="w-100 object-fit-cover" style="height: 400px;">
+                        </div>
+                        <div class="col-lg-6 p-5">
+                            <div class="blog-meta">Technique • 5 Min Read</div>
+                            <h2 class="mb-3">Mastering the Hand Plane: Setup and Usage</h2>
+                            <p class="text-secondary mb-4">Before you can take finest shavings, you must understand the
+                                geometry of your plane. Learn how to sharpen, cap-iron set, and tune your sole for
+                                perfect results.</p>
+                            <a href="blog-details.html" class="btn btn-outline-dark">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 1 -->
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <a href="blog-details.html"><img
+                                src="https://images.unsplash.com/photo-1549429188-75c0414777d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                class="blog-card-img" alt="Post 1"></a>
+                        <div class="blog-meta">Student Spotlight • Jan 20, 2026</div>
+                        <h4 class="mb-3"><a href="blog-details.html" class="text-dark">From IT to Woodworking: Sarah's
+                                Journey</a></h4>
+                        <p class="text-secondary small">How one student found peace and purpose in the shavings of a
+                            hand plane.</p>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <a href="blog-details.html"><img
+                                src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                class="blog-card-img" alt="Post 2"></a>
+                        <div class="blog-meta">Tools • Jan 15, 2026</div>
+                        <h4 class="mb-3"><a href="blog-details.html" class="text-dark">Understanding Japanese
+                                Chisels</a></h4>
+                        <p class="text-secondary small">Why laminated steel holds an edge longer and how to care for
+                            these delicate tools.</p>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <a href="blog-details.html"><img
+                                src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                class="blog-card-img" alt="Post 3"></a>
+                        <div class="blog-meta">Philosophy • Jan 10, 2026</div>
+                        <h4 class="mb-3"><a href="blog-details.html" class="text-dark">The Soul of the Tree</a></h4>
+                        <p class="text-secondary small">How to read grain direction and work with the wood's movement,
+                            not against it.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
+                            <li class="page-item active"><a class="page-link bg-primary border-primary" href="#">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="mb-4 text-white font-serif">WOODCRAFT ACADEMY</h3>
+                    <p class="opacity-75">Mastering Wood. Shaping Futures. We dedicated to preserving the art of fine
+                        woodworking through structured education.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Courses</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">FAQ</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5>Newsletter</h5>
+                    <p class="opacity-75 small">Join our community for tips and updates.</p>
+                    <form class="d-flex gap-2">
+                        <input class="form-control bg-dark border-secondary text-white" type="email"
+                            placeholder="Your email">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Woodcraft Academy | Crafted with Precision</p>
+            </div>
+        </div>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle"
+            style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"><i
+                class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodcraft Academy | The Workshop</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Specific overrides for Home 2 */
+        body {
+            background-color: var(--dark);
+            color: var(--light-grey);
+        }
+
+        .hero-2 {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1574515598858-294380eb9a27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+        }
+
+        .feature-card {
+            background: #2C2C2C;
+            border-color: rgba(255, 255, 255, 0.05);
+            color: var(--light-grey);
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+
+<body class="dark-mode"> <!-- Force Dark Mode Start -->
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html">WOODCRAFT ACADEMY</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="services.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="services.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="login.html" class="nav-link m-0 fw-bold text-white">Login</a>
+                    <a href="register.html" class="nav-link m-0 fw-bold text-white">Signup</a>
+                    <a href="#" id="theme-toggle" class="nav-link m-0 fs-5 text-warning">☀️</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Offcanvas -->
+    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title font-serif fw-bold">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column gap-3">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="services.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                <hr class="border-secondary">
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="register.html">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero 2 -->
+    <section class="hero-2">
+        <div class="container animate-up">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <span class="text-primary text-uppercase fw-bold letter-spacing mb-3 d-block">The Workshop</span>
+                    <h1 class="display-2 fw-bold mb-4">Respect the Grain.<br>Master the Tool.</h1>
+                    <p class="lead text-white-50 mb-5">
+                        Immerse yourself in a real artisan environment. Learn the ancient ways of joinery combined with
+                        modern precision.
+                    </p>
+                    <a href="contact.html" class="btn btn-outline-light px-4 py-3">Book a Workshop Tour</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Process -->
+    <section class="section-padding bg-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">The Artisan Process</h2>
+                <p class="text-white-50">It's not just about cutting wood. It's about patience, design, and execution.
+                </p>
+            </div>
+
+            <div class="row g-5 align-items-center mb-5">
+                <div class="col-md-6 order-md-2">
+                    <img src="https://images.unsplash.com/photo-1622383563227-04401bb4a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Process" class="img-fluid rounded border-secondary border">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3 class="text-white">1. Selection & Preparation</h3>
+                    <p class="text-white-50">Understanding the material is the first step. We teach you how to select,
+                        dry, and prepare timber for a lifetime of durability.</p>
+                    <ul class="text-primary list-unstyled mt-3">
+                        <li class="mb-2"><i class="fas fa-check me-2"></i> Timber Grading</li>
+                        <li class="mb-2"><i class="fas fa-check me-2"></i> Grain Orientation</li>
+                        <li class="mb-2"><i class="fas fa-check me-2"></i> Milling & Planning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1503602642458-2321114453ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Tools" class="img-fluid rounded border-secondary border">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-white">2. Precision Joinery</h3>
+                    <p class="text-white-50">No screws, no nails. Learn the art of dovetails, mortise & tenon, and
+                        Japanese joinery techniques.</p>
+                    <ul class="text-primary list-unstyled mt-3">
+                        <li class="mb-2"><i class="fas fa-check me-2"></i> Hand Tool Mastery</li>
+                        <li class="mb-2"><i class="fas fa-check me-2"></i> Sharpening Skills</li>
+                        <li class="mb-2"><i class="fas fa-check me-2"></i> Complex Fits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <section class="section-padding" style="background-color: #222;">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">Our Arsenal</h2>
+                <p class="text-white-50">State of the art machinery meets traditional hand tools.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="text-center p-4 border border-secondary rounded">
+                        <i class="fas fa-hammer fa-2x text-primary mb-3"></i>
+                        <h5 class="text-white">Hand Tools</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center p-4 border border-secondary rounded">
+                        <i class="fas fa-plug fa-2x text-primary mb-3"></i>
+                        <h5 class="text-white">Power Tools</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center p-4 border border-secondary rounded">
+                        <i class="fas fa-pencil-ruler fa-2x text-primary mb-3"></i>
+                        <h5 class="text-white">Design Lab</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center p-4 border border-secondary rounded">
+                        <i class="fas fa-spray-can fa-2x text-primary mb-3"></i>
+                        <h5 class="text-white">Finishing Room</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="mb-4 text-white font-serif">WOODCRAFT ACADEMY</h3>
+                    <p class="opacity-75">Mastering Wood. Shaping Futures. We dedicated to preserving the art of fine
+                        woodworking through structured education.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Courses</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">FAQ</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5>Newsletter</h5>
+                    <p class="opacity-75 small">Join our community for tips and updates.</p>
+                    <form class="d-flex gap-2">
+                        <input class="form-control bg-dark border-secondary text-white" type="email"
+                            placeholder="Your email">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Woodcraft Academy | Crafted with Precision</p>
+            </div>
+        </div>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle"
+            style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"><i
+                class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

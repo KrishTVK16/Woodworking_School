@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodcraft Academy | Visit The Workshop</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WOODCRAFT ACADEMY</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="login.html" class="nav-link m-0 fw-bold">Login</a>
+                    <a href="register.html" class="nav-link m-0 fw-bold">Signup</a>
+                    <a href="#" id="theme-toggle" class="nav-link m-0 fs-5">🌙</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title font-serif fw-bold">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column gap-3">
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="services.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+                <hr>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="register.html">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="section-padding pb-0 pt-5 mt-5">
+        <div class="container text-center animate-up">
+            <h6 class="text-primary text-uppercase letter-spacing mb-3">Get in Touch</h6>
+            <h1 class="display-4 fw-bold">Visit The Workshop</h1>
+            <p class="lead text-secondary mx-auto mt-3" style="max-width: 700px;">Come smell the cedar. We are located
+                in the historic industrial district.</p>
+        </div>
+    </header>
+
+    <!-- Contact Info & Form -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="contact-info bg-tertiary p-5 rounded h-100">
+                        <h3 class="mb-4">Contact Info</h3>
+
+                        <div class="d-flex mb-4">
+                            <i class="fas fa-map-marker-alt text-primary fs-4 mt-1 me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Address</h5>
+                                <p class="text-secondary mb-0">128 Artisan Avenue,<br>Sawdust District, CA 90210</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <i class="fas fa-envelope text-primary fs-4 mt-1 me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Email</h5>
+                                <p class="text-secondary mb-0">hello@woodcraftacademy.com</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-5">
+                            <i class="fas fa-phone text-primary fs-4 mt-1 me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Phone</h5>
+                                <p class="text-secondary mb-0">+1 (555) 123-WOOD</p>
+                            </div>
+                        </div>
+
+                        <h5 class="mb-3">Open Hours</h5>
+                        <ul class="list-unstyled text-secondary">
+                            <li class="d-flex justify-content-between mb-2"><span>Mon - Fri:</span> <span>9:00 AM - 6:00
+                                    PM</span></li>
+                            <li class="d-flex justify-content-between mb-2"><span>Saturday:</span> <span>10:00 AM - 4:00
+                                    PM</span></li>
+                            <li class="d-flex justify-content-between"><span>Sunday:</span> <span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Send us a Message</h3>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-control" placeholder="John">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-control" placeholder="Doe">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="john@example.com">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Subject</label>
+                                <select class="form-select">
+                                    <option>General Inquiry</option>
+                                    <option>Course Registration</option>
+                                    <option>Private Workshop</option>
+                                    <option>Partnership</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="5" placeholder="How can we help you?"></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-primary px-5 py-3">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map -->
+    <div class="container-fluid p-0">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d-122.4194154846817!3d37.77492927975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter+HQ!5e0!3m2!1sen!2sus!4v1567890123456!5m2!1sen!2sus"
+            width="100%" height="450" style="border:0; filter: grayscale(100%);" allowfullscreen=""
+            loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="mb-4 text-white font-serif">WOODCRAFT ACADEMY</h3>
+                    <p class="opacity-75">Mastering Wood. Shaping Futures. We dedicated to preserving the art of fine
+                        woodworking through structured education.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Courses</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">FAQ</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5>Newsletter</h5>
+                    <p class="opacity-75 small">Join our community for tips and updates.</p>
+                    <form class="d-flex gap-2">
+                        <input class="form-control bg-dark border-secondary text-white" type="email"
+                            placeholder="Your email">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Woodcraft Academy | Crafted with Precision</p>
+            </div>
+        </div>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle"
+            style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"><i
+                class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

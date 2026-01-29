@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodcraft Academy | Billion-Dollar Craftsmanship</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WOODCRAFT ACADEMY</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Projects</a> <!-- Linking to services/projects for now or #projects? User said file names mapped. Projects might be in index or services. I'll stick to navigation items as requested. -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="login.html" class="nav-link m-0 fw-bold">Login</a>
+                    <a href="register.html" class="nav-link m-0 fw-bold">Signup</a>
+                    <a href="#" id="theme-toggle" class="nav-link m-0 fs-5">🌙</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title font-serif fw-bold">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column gap-3">
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="services.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+                <hr>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="register.html">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container animate-up">
+            <span class="d-inline-block text-uppercase text-white-50 letter-spacing mb-3">Excellence in Craft</span>
+            <h1 class="display-3 fw-bold mb-4">Where Wood Becomes Art<br>& Skill Becomes Mastery</h1>
+            <p class="lead text-white-50 mb-5 mx-auto" style="max-width: 700px;">
+                Professional Woodworking School with Structured Courses and Real Projects. JOIN THE ELITE.
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="services.html" class="btn btn-primary px-4 py-3">View Courses</a>
+                <a href="register.html" class="btn btn-outline-light px-4 py-3">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section-padding bg-tertiary">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon"><i class="fas fa-ruler-combined"></i></div>
+                        <h4>Structured Training</h4>
+                        <p class="text-secondary small">From basics to master joinery, follow a proven curriculum designed by industry legends.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                        <h4>Certified Projects</h4>
+                        <p class="text-secondary small">Build portfolio-worthy furniture pieces that demonstrate your precision and skill.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon"><i class="fas fa-users-cog"></i></div>
+                        <h4>Master Craftsmen</h4>
+                        <p class="text-secondary small">Learn directly from artisans with decades of experience in fine woodworking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Gallery -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Masterpieces Created Here</h2>
+                <p>A glimpse into the works of our students and instructors.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="project-item">
+                        <img src="https://images.unsplash.com/photo-1611486212557-88be5ff6f941?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Oak Table">
+                        <div class="project-overlay">
+                            <span class="project-cat">Advanced Joinery</span>
+                            <h3 class="project-title">Solid Oak Dining Table</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-item">
+                        <img src="https://images.unsplash.com/photo-1598335624129-f79a941f1274?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cabinet">
+                        <div class="project-overlay">
+                            <span class="project-cat">Cabinetry</span>
+                            <h3 class="project-title">Walnut Display Cabinet</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-item">
+                        <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chair">
+                        <div class="project-overlay">
+                            <span class="project-cat">Seating</span>
+                            <h3 class="project-title">Artisan Chair</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-item">
+                        <img src="https://images.unsplash.com/photo-1549429188-75c0414777d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Box">
+                        <div class="project-overlay">
+                            <span class="project-cat">Small Goods</span>
+                            <h3 class="project-title">Keepsake Box</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-item">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tools">
+                        <div class="project-overlay">
+                            <span class="project-cat">Tools</span>
+                            <h3 class="project-title">Hand Plane Restoration</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-outline-dark">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Batches / CTA -->
+    <section class="section-padding bg-secondary text-white">
+        <div class="container text-center">
+            <h2 class="text-white mb-4">Ready to Start Your Journey?</h2>
+            <p class="lead opacity-75 mb-5">Join the upcoming batch starting next month. Limited seats available for personal attention.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="register.html" class="btn btn-primary btn-lg">Enroll Now - Feb 2026</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg">Visit the Workshop</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding bg-tertiary">
+        <div class="container">
+            <div class="section-title">
+                <h2>Student Stories</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="bg-white p-4 rounded shadow-sm border h-100">
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="fs-6 fst-italic">"The level of detail and patience the instructors have is unmatched. I went from zero knowledge to building my own desk in 3 months."</p>
+                        <h6 class="mt-4 fw-bold text-primary">— Sarah Jenkins</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-white p-4 rounded shadow-sm border h-100">
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="fs-6 fst-italic">"Woodcraft Academy isn't just a school, it's a community. The facility is top-tier and the vibe is pure creativity."</p>
+                        <h6 class="mt-4 fw-bold text-primary">— Mark Davids</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-white p-4 rounded shadow-sm border h-100">
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="fs-6 fst-italic">"Excellent curriculum. The mix of theory and hands-on practice is perfect for anyone serious about the craft."</p>
+                        <h6 class="mt-4 fw-bold text-primary">— James Wilson</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="mb-4 text-white font-serif">WOODCRAFT ACADEMY</h3>
+                    <p class="opacity-75">Mastering Wood. Shaping Futures. We dedicated to preserving the art of fine woodworking through structured education.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Courses</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">FAQ</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5>Newsletter</h5>
+                    <p class="opacity-75 small">Join our community for tips and updates.</p>
+                    <form class="d-flex gap-2">
+                        <input class="form-control bg-dark border-secondary text-white" type="email" placeholder="Your email">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Woodcraft Academy | Crafted with Precision</p>
+            </div>
+        </div>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

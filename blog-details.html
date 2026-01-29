@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodcraft Academy | Mastering the Hand Plane</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .article-content p {
+            margin-bottom: 2rem;
+        }
+
+        .article-content h2 {
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WOODCRAFT ACADEMY</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="login.html" class="nav-link m-0 fw-bold">Login</a>
+                    <a href="register.html" class="nav-link m-0 fw-bold">Signup</a>
+                    <a href="#" id="theme-toggle" class="nav-link m-0 fs-5">🌙</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title font-serif fw-bold">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column gap-3">
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="services.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+                <hr>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="register.html">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Article Header -->
+    <header class="section-padding pb-0 pt-5 mt-5">
+        <div class="container animate-up">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="mb-3 text-primary text-uppercase letter-spacing fw-bold">Technique</div>
+                    <h1 class="display-4 fw-bold mb-4">Mastering the Hand Plane: Setup and Usage</h1>
+                    <div class="d-flex justify-content-center align-items-center gap-3 text-secondary">
+                        <img src="https://images.unsplash.com/photo-1542596594-649edbc13630?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="Author" class="rounded-circle" width="40" height="40">
+                        <span>By Elias Thorne</span>
+                        <span>•</span>
+                        <span>Jan 25, 2026</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-10">
+                    <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                        alt="Hand Plane" class="img-fluid rounded shadow-sm w-100">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 article-content">
+                    <p class="lead">The hand plane is perhaps the most iconic symbol of the woodworker, yet it is often
+                        the most misunderstood. A well-tuned plane can leave a surface that no sandpaper can match—glass
+                        smooth and shimmering with chatoyance.</p>
+
+                    <h2>1. The Sole Check</h2>
+                    <p>Before you ever touch the iron to the stone, you must ensure the sole of your plane is flat. A
+                        twisted sole will never cut predictably. Use a straight edge and feeler gauges. If it's out, you
+                        have some lapping to do.</p>
+
+                    <img src="https://images.unsplash.com/photo-1622383563227-04401bb4a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded my-4" alt="Checking sole">
+
+                    <h2>2. Sharpening the Iron</h2>
+                    <p>Sharp is not a suggestion; it's a requirement. We use the "scary sharp" waterstone method here at
+                        the Academy. Start at 1000 grit to establish the burr, move to 4000 to refine, and finish on
+                        8000 for a mirror polish.</p>
+                    <blockquote>"A dull tool is a dangerous tool. It requires force where finesse is needed."
+                    </blockquote>
+
+                    <h2>3. Setting the Cap Iron</h2>
+                    <p>This is the secret weapon against tear-out. Set your cap iron (chip breaker) as close to the edge
+                        as you dare—about 0.5mm is a good starting point for smoothing operations. This forces the
+                        shaving to curl and break before it can lift the grain ahead of the cut.</p>
+
+                    <h2>Conclusion</h2>
+                    <p>Mastering the plane takes time. Don't be discouraged by chatter or tear-out. Listen to the sound
+                        of the cut. A wispy *shhhhuuu* ensures you are on the right path.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <h3 class="mb-4">Related Readings</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="d-flex gap-3 align-items-center bg-white p-3 rounded shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                            class="rounded" width="100" height="100" style="object-fit: cover;">
+                        <div>
+                            <div class="small text-primary text-uppercase mb-1">Tools</div>
+                            <h5 class="mb-0"><a href="#" class="text-dark text-decoration-none">Understanding Japanese
+                                    Chisels</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex gap-3 align-items-center bg-white p-3 rounded shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                            class="rounded" width="100" height="100" style="object-fit: cover;">
+                        <div>
+                            <div class="small text-primary text-uppercase mb-1">Philosophy</div>
+                            <h5 class="mb-0"><a href="#" class="text-dark text-decoration-none">The Soul of the Tree</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="mb-4 text-white font-serif">WOODCRAFT ACADEMY</h3>
+                    <p class="opacity-75">Mastering Wood. Shaping Futures. We dedicated to preserving the art of fine
+                        woodworking through structured education.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Courses</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">FAQ</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5>Newsletter</h5>
+                    <p class="opacity-75 small">Join our community for tips and updates.</p>
+                    <form class="d-flex gap-2">
+                        <input class="form-control bg-dark border-secondary text-white" type="email"
+                            placeholder="Your email">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Woodcraft Academy | Crafted with Precision</p>
+            </div>
+        </div>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle"
+            style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"><i
+                class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

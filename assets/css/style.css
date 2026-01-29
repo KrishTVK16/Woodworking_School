@@ -1,0 +1,383 @@
+/* 
+ * Woodcraft Academy - Premium Education Platform
+ * Billion Dollar Design System
+ */
+
+:root {
+    /* Color Palette */
+    --primary: #C8A97E;       /* Natural Wood Beige */
+    --primary-dark: #A68A64;
+    --secondary: #7A5C3D;     /* Soft Brown */
+    --tertiary: #F5F1EB;      /* Off White */
+    --dark: #1C1C1C;          /* Charcoal Black */
+    --dark-grey: #2C2C2C;
+    --light-grey: #E9ECEF;
+    --white: #FFFFFF;
+    
+    /* Typography */
+    --font-serif: 'Playfair Display', serif; /* Luxury Headings */
+    --font-sans: 'Inter', sans-serif;        /* Clean Body */
+    
+    /* Spacing & Layout */
+    --section-padding: 100px;
+    --border-radius: 4px; /* Sharp, precise artisan feel */
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Global Reset & Base */
+body {
+    font-family: var(--font-sans);
+    color: var(--dark);
+    background-color: var(--tertiary);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    color: var(--secondary);
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Utilities */
+.text-primary { color: var(--primary) !important; }
+.text-secondary { color: var(--secondary) !important; }
+.bg-primary { background-color: var(--primary) !important; }
+.bg-secondary { background-color: var(--secondary) !important; }
+.bg-dark { background-color: var(--dark) !important; }
+.bg-tertiary { background-color: var(--tertiary) !important; }
+
+.section-padding { padding: var(--section-padding) 0; }
+.btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+    border: none;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+    border: 1px solid var(--dark);
+    color: var(--dark);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+/* Header */
+.navbar {
+    padding: 1.5rem 0;
+    background: transparent;
+    transition: var(--transition);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+    font-family: var(--font-serif);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--secondary);
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--dark);
+    margin: 0 10px;
+    position: relative;
+    opacity: 0.8;
+}
+
+.nav-link:hover, .nav-link.active {
+    opacity: 1;
+    color: var(--secondary);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary);
+    transition: var(--transition);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/hero-bg.jpg'); /* Need placeholder */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--white);
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: var(--primary);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+/* Sections */
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-title p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Project Gallery */
+.project-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+}
+
+.project-item img {
+    width: 100%;
+    transition: var(--transition);
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    padding: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: var(--transition);
+}
+
+.project-item:hover .project-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-title {
+    color: var(--white);
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.project-cat {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 5rem 0 2rem;
+}
+
+footer h5 {
+    color: var(--primary);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+footer a {
+    color: rgba(255,255,255,0.7);
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+footer a:hover {
+    color: var(--white);
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.5);
+}
+
+/* Course Card */
+.course-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.course-img {
+    height: 240px;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+}
+
+.course-body {
+    padding: 2rem;
+    flex: 1;
+}
+
+.course-price {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-up {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Dark Mode (Basic Implementation) */
+body.dark-mode {
+    background-color: var(--dark);
+    color: var(--tertiary);
+}
+
+body.dark-mode .navbar.scrolled {
+    background: rgba(28, 28, 28, 0.95);
+}
+
+body.dark-mode .nav-link {
+    color: var(--white);
+}
+
+body.dark-mode .feature-card, 
+body.dark-mode .course-card {
+    background: var(--dark-grey);
+    border-color: rgba(255,255,255,0.05);
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3 {
+    color: var(--white);
+}
+
+/* Form Styles */
+.form-control {
+    background-color: var(--tertiary);
+    border: 1px solid transparent;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.form-control:focus {
+    background-color: var(--white);
+    border-color: var(--primary);
+    box-shadow: none;
+}
