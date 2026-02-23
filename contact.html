@@ -51,10 +51,13 @@
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45">
             </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#mobileMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center gap-2 order-lg-last">
+                <a href="#" id="theme-toggle" class="nav-link m-0 fs-5">🌙</a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
@@ -83,9 +86,8 @@
                     </li>
                 </ul>
                 <div class="d-flex align-items-center gap-2">
-                    <a href="login.html" class="nav-link nav-btn m-0">Login</a>
-                    <a href="register.html" class="nav-link nav-btn m-0">Signup</a>
-                    <a href="#" id="theme-toggle" class="nav-link m-0 fs-5">🌙</a>
+                    <a href="login.html" class="nav-link nav-btn m-0 d-none d-lg-flex">Login</a>
+                    <a href="register.html" class="nav-link nav-btn m-0 d-none d-lg-flex">Signup</a>
                 </div>
             </div>
         </div>

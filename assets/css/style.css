@@ -696,3 +696,74 @@ body.dark-mode .table th {
     border-color: var(--primary);
     box-shadow: none;
 }
+
+/* Auth Enhancements */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: var(--dark);
+    opacity: 0.5;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.divider:not(:empty)::before {
+    margin-right: .5em;
+}
+
+.divider:not(:empty)::after {
+    margin-left: .5em;
+}
+
+.social-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--secondary);
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.social-btn:hover {
+    background-color: var(--secondary);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+body.dark-mode .divider {
+    color: var(--white);
+}
+
+body.dark-mode .divider::before,
+body.dark-mode .divider::after {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .social-btn {
+    border-color: rgba(255, 255, 255, 0.1);
+    color: burlywood;
+}
+
+body.dark-mode .social-btn:hover {
+    background-color: burlywood;
+    color: var(--dark);
+}
