@@ -21,6 +21,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 </head>
 
 <body>
@@ -28,7 +31,9 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">WOODCRAFT ACADEMY</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45">
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#mobileMenu">
                 <span class="navbar-toggler-icon"></span>
@@ -39,24 +44,30 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="home-2.html">Workshop</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="services.html">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Projects</a>
+                        <a class="nav-link active" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link nav-btn" href="dashboard.html">Dashboard</a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center gap-3">
-                    <a href="login.html" class="nav-link m-0 fw-bold">Login</a>
-                    <a href="register.html" class="nav-link m-0 fw-bold">Signup</a>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="login.html" class="nav-link nav-btn m-0">Login</a>
+                    <a href="register.html" class="nav-link nav-btn m-0">Signup</a>
                     <a href="#" id="theme-toggle" class="nav-link m-0 fs-5">🌙</a>
                 </div>
             </div>
@@ -66,42 +77,46 @@
     <!-- Mobile Menu Offcanvas -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title font-serif fw-bold">Menu</h5>
+            <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="40">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="nav flex-column gap-3">
-                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="services.html">Courses</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="pricing.html">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Workshop</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                 <hr>
-                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="login.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="register.html">Signup</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn mb-2" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn mb-2" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn" href="register.html">Signup</a></li>
             </ul>
         </div>
     </div>
 
     <!-- Page Header -->
-    <header class="section-padding pb-0 pt-5 mt-5">
-        <div class="container text-center animate-up">
+    <header class="page-header hero-about text-center">
+        <div class="container animate-up">
             <h6 class="text-primary text-uppercase letter-spacing mb-3">Our Story</h6>
             <h1 class="display-4 fw-bold">Preserving the Craft</h1>
         </div>
     </header>
 
     <!-- Story/Philosophy -->
-    <section class="section-padding">
+    <section class="section-padding section-bg-overlay"
+        style="background-image: url('https://images.unsplash.com/photo-1497219055242-93359eeed651?q=80&w=2070');">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <img src="https://images.unsplash.com/photo-1517429188094-874db81d6438?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Workshop Owner" class="img-fluid rounded shadow-lg">
+                    <img src="assets/images/EliasThorne.webp" alt="Workshop Owner" class="img-fluid rounded shadow-lg">
                 </div>
                 <div class="col-lg-6 ps-lg-5">
                     <h3>More than just a school.</h3>
-                    <p class="lead text-secondary mb-4">We believe that in a digital world, working with your hands is a
+                    <p class="lead text-dark mb-4 fw-bold">We believe that in a digital world, working with your hands
+                        is a
                         radical act of connection.</p>
                     <p class="mb-4">Founded in 2010, Woodcraft Academy started as a small community workshop. Today, it
                         stands as a premier institution for fine woodworking education. Our philosophy relates to the
@@ -136,8 +151,8 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="bg-white p-0 rounded overflow-hidden shadow-sm h-100">
-                        <img src="https://images.unsplash.com/photo-1542596594-649edbc13630?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                            class="w-100" style="height: 300px; object-fit: cover;" alt="Master 1">
+                        <img src="assets/images/EliasThorne.webp" class="w-100"
+                            style="height: 300px; object-fit: cover;" alt="Master 1">
                         <div class="p-4 text-center">
                             <h5 class="fw-bold mb-1">Elias Thorne</h5>
                             <span class="text-primary small text-uppercase">Head Instructor</span>
@@ -147,8 +162,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="bg-white p-0 rounded overflow-hidden shadow-sm h-100">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                            class="w-100" style="height: 300px; object-fit: cover;" alt="Master 2">
+                        <img src="assets/images/Sarah.webp" class="w-100" style="height: 300px; object-fit: cover;"
+                            alt="Master 2">
                         <div class="p-4 text-center">
                             <h5 class="fw-bold mb-1">Sarah O'Connell</h5>
                             <span class="text-primary small text-uppercase">Furniture Design</span>
@@ -186,7 +201,7 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <h3 class="mb-4 text-white font-serif">WOODCRAFT ACADEMY</h3>
+                    <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45" class="mb-4">
                     <p class="opacity-75">Mastering Wood. Shaping Futures. We dedicated to preserving the art of fine
                         woodworking through structured education.</p>
                     <div class="d-flex gap-3 mt-4">
@@ -198,10 +213,12 @@
                 <div class="col-lg-2 col-md-3">
                     <h5>Company</h5>
                     <ul class="list-unstyled">
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home-2.html">Workshop</a></li>
                         <li><a href="services.html">Courses</a></li>
-                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-3">

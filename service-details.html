@@ -21,6 +21,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 </head>
 
 <body>
@@ -28,7 +31,9 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">WOODCRAFT ACADEMY</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45">
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#mobileMenu">
                 <span class="navbar-toggler-icon"></span>
@@ -39,24 +44,30 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="home-2.html">Workshop</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" href="services.html">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Projects</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link nav-btn" href="dashboard.html">Dashboard</a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center gap-3">
-                    <a href="login.html" class="nav-link m-0 fw-bold">Login</a>
-                    <a href="register.html" class="nav-link m-0 fw-bold">Signup</a>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="login.html" class="nav-link nav-btn m-0">Login</a>
+                    <a href="register.html" class="nav-link nav-btn m-0">Signup</a>
                     <a href="#" id="theme-toggle" class="nav-link m-0 fs-5">🌙</a>
                 </div>
             </div>
@@ -66,45 +77,54 @@
     <!-- Mobile Menu Offcanvas -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title font-serif fw-bold">Menu</h5>
+            <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="40">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="nav flex-column gap-3">
-                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="services.html">Courses</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="pricing.html">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Workshop</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                 <hr>
-                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="login.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="register.html">Signup</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn mb-2" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn mb-2" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn" href="register.html">Signup</a></li>
             </ul>
         </div>
     </div>
 
     <!-- Course Hero -->
-    <header class="section-padding bg-dark text-white pb-5 pt-5 mt-5">
-        <div class="container pt-5">
+    <header class="page-header hero-details text-center">
+        <div class="container animate-up">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <span class="badge bg-primary mb-3 p-2">Beginner Friendly</span>
                     <h1 class="display-3 fw-bold mb-4">Foundation of Joinery</h1>
-                    <p class="lead opacity-75 mb-4">Master the essential hand-tool skills that every woodworker needs.
-                        No noise, no dust extraction—just you, the wood, and the blade.</p>
-                    <div class="d-flex gap-4 text-white-50 mb-5">
-                        <span><i class="far fa-clock me-2"></i> 4 Weeks</span>
-                        <span><i class="fas fa-user-friends me-2"></i> 8 Seats/Batch</span>
-                        <span><i class="fas fa-tag me-2"></i> $299</span>
-                    </div>
-                    <a href="#register" class="btn btn-primary btn-lg px-5">Enroll Now</a>
-                </div>
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1610555356070-d0efb6505f81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Joinery" class="img-fluid rounded border border-white-50">
+                    <p class="lead text-white mb-5 mx-auto" style="max-width: 800px; font-weight: 500;">
+                        Master the essential hand-tool skills that every woodworker needs.
+                        No noise, no dust extraction—just you, the wood, and the blade.
+                    </p>
                 </div>
             </div>
         </div>
+    </header>
+    <div class="d-flex gap-4 text-white-50 mb-5">
+        <span><i class="far fa-clock me-2"></i> 4 Weeks</span>
+        <span><i class="fas fa-user-friends me-2"></i> 8 Seats/Batch</span>
+        <span><i class="fas fa-tag me-2"></i> $299</span>
+    </div>
+    <a href="#register" class="btn btn-primary btn-lg px-5">Enroll Now</a>
+    </div>
+    <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1610555356070-d0efb6505f81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Joinery" class="img-fluid rounded border border-white-50">
+    </div>
+    </div>
+    </div>
     </header>
 
     <!-- Overview & What You'll Build -->
@@ -113,7 +133,8 @@
             <div class="row g-5">
                 <div class="col-lg-8">
                     <h2 class="mb-4">Course Overview</h2>
-                    <p class="mb-5 text-secondary">This course is designed to take the fear out of sharp tools. You will
+                    <p class="mb-5 text-dark fw-bold">This course is designed to take the fear out of sharp tools. You
+                        will
                         learn how to sharpen chisels and planes to a razor edge, how to layout joinery with precision,
                         and how to execute the three foundational joints: the Dovetail, the Mortise & Tenon, and the
                         Bridle Joint.</p>
@@ -124,7 +145,8 @@
                             <img src="https://images.unsplash.com/photo-1574515598858-294380eb9a27?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                                 class="img-fluid rounded mb-3" alt="Mallet">
                             <h5>1. Joiner's Mallet</h5>
-                            <p class="small text-muted">Your first tool. Built from tough Beech and Walnut, customized
+                            <p class="small text-dark fw-bold">Your first tool. Built from tough Beech and Walnut,
+                                customized
                                 to your grip.</p>
                         </div>
                         <div class="col-md-6">
@@ -257,7 +279,7 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <h3 class="mb-4 text-white font-serif">WOODCRAFT ACADEMY</h3>
+                    <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45" class="mb-4">
                     <p class="opacity-75">Mastering Wood. Shaping Futures. We dedicated to preserving the art of fine
                         woodworking through structured education.</p>
                     <div class="d-flex gap-3 mt-4">
@@ -269,10 +291,12 @@
                 <div class="col-lg-2 col-md-3">
                     <h5>Company</h5>
                     <ul class="list-unstyled">
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home-2.html">Workshop</a></li>
                         <li><a href="services.html">Courses</a></li>
-                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-3">

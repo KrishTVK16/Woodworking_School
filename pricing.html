@@ -22,6 +22,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
     <style>
         .pricing-card {
             background: var(--white);
@@ -58,6 +61,13 @@
             font-weight: 600;
             text-transform: uppercase;
         }
+
+        .experience-img {
+            border-radius: var(--border-radius);
+            height: 400px;
+            object-fit: cover;
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -66,7 +76,9 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">WOODCRAFT ACADEMY</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45">
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#mobileMenu">
                 <span class="navbar-toggler-icon"></span>
@@ -77,24 +89,30 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="home-2.html">Workshop</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="services.html">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Projects</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" href="pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link nav-btn" href="dashboard.html">Dashboard</a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center gap-3">
-                    <a href="login.html" class="nav-link m-0 fw-bold">Login</a>
-                    <a href="register.html" class="nav-link m-0 fw-bold">Signup</a>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="login.html" class="nav-link nav-btn m-0">Login</a>
+                    <a href="register.html" class="nav-link nav-btn m-0">Signup</a>
                     <a href="#" id="theme-toggle" class="nav-link m-0 fs-5">🌙</a>
                 </div>
             </div>
@@ -104,29 +122,33 @@
     <!-- Mobile Menu Offcanvas -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title font-serif fw-bold">Menu</h5>
+            <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="40">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="nav flex-column gap-3">
-                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="services.html">Courses</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="pricing.html">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Workshop</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                 <hr>
-                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="login.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="register.html">Signup</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn mb-2" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn mb-2" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn" href="register.html">Signup</a></li>
             </ul>
         </div>
     </div>
 
     <!-- Page Header -->
-    <header class="section-padding pb-0 pt-5 mt-5">
-        <div class="container text-center animate-up">
+    <header class="page-header hero-pricing text-center">
+        <div class="container animate-up">
             <h6 class="text-primary text-uppercase letter-spacing mb-3">Investment</h6>
             <h1 class="display-4 fw-bold">Transparent Pricing</h1>
-            <p class="lead text-secondary mx-auto mt-3" style="max-width: 700px;">No hidden materials fees. You pay for
+            <p class="lead text-white mx-auto mt-3 fw-bold" style="max-width: 700px;">No hidden materials fees. You pay
+                for
                 the skill, the tools are on us.</p>
         </div>
     </header>
@@ -134,62 +156,110 @@
     <!-- Pricing Grid -->
     <section class="section-padding">
         <div class="container">
-            <div class="row g-4 align-items-center">
+            <div class="pricing-wrapper border rounded-4 p-4 p-md-5 bg-white shadow-sm">
+                <div class="row g-4 align-items-center">
 
-                <!-- Beginner -->
-                <div class="col-lg-4">
-                    <div class="pricing-card text-center">
-                        <h4 class="mb-2">Hobbyist</h4>
-                        <p class="text-secondary small mb-4">Perfect for weekends</p>
-                        <h2 class="fw-bold display-5 mb-4">$299</h2>
-                        <ul class="list-unstyled text-start mb-5 d-inline-block mx-auto">
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Foundation Course (4 Weeks)
-                            </li>
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 2 Projects Included</li>
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Tool Usage (In-class)</li>
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Certificate of Completion
-                            </li>
-                        </ul>
-                        <a href="register.html" class="btn btn-outline-dark w-100">Get Started</a>
+                    <!-- Beginner -->
+                    <div class="col-lg-4">
+                        <div class="pricing-card text-center shadow-sm">
+                            <h4 class="mb-2">Hobbyist</h4>
+                            <p class="text-secondary small mb-4">Perfect for weekends</p>
+                            <h2 class="fw-bold display-5 mb-4">$299</h2>
+                            <ul class="list-unstyled text-start mb-5 d-inline-block mx-auto">
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Foundation Course (4
+                                    Weeks)
+                                </li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 2 Projects Included</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Tool Usage (In-class)
+                                </li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Certificate of
+                                    Completion
+                                </li>
+                            </ul>
+                            <a href="register.html" class="btn btn-outline-dark w-100">Get Started</a>
+                        </div>
+                    </div>
+
+                    <!-- Intermediate -->
+                    <div class="col-lg-4">
+                        <div class="pricing-card popular text-center shadow-sm">
+                            <span class="popular-badge">Most Popular</span>
+                            <h4 class="mb-2">Craftsman</h4>
+                            <p class="text-secondary small mb-4">Serious skill building</p>
+                            <h2 class="fw-bold display-5 mb-4">$899</h2>
+                            <ul class="list-unstyled text-start mb-5 d-inline-block mx-auto">
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Intermediate Course (12
+                                    Weeks)</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 4 Complex Projects</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Open Workshop Access
+                                </li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 1-on-1 Mentorship</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Material Discount (10%)
+                                </li>
+                            </ul>
+                            <a href="register.html" class="btn btn-primary w-100">Enroll Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Professional -->
+                    <div class="col-lg-4">
+                        <div class="pricing-card text-center shadow-sm">
+                            <h4 class="mb-2">Master</h4>
+                            <p class="text-secondary small mb-4">Career focused</p>
+                            <h2 class="fw-bold display-5 mb-4">$4,500</h2>
+                            <ul class="list-unstyled text-start mb-5 d-inline-block mx-auto">
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Full Diploma (6 Months)
+                                </li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Portfolio Development
+                                </li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Business of Woodworking
+                                </li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Dedicated Bench Space
+                                </li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Lifetime Alumni Access
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-dark w-100">Contact Us</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate & Group Experiences -->
+    <section class="section-padding bg-tertiary">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Group Workshop" class="experience-img shadow-lg">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <h6 class="text-primary text-uppercase letter-spacing mb-3">Custom Events</h6>
+                    <h2 class="display-5 fw-bold mb-4">Corporate & Group Experiences</h2>
+                    <p class="lead text-secondary mb-4 mx-auto" style="max-width: 500px;">Looking for a unique
+                        team-building event or a private workshop
+                        for friends? We offer tailored woodworking experiences designed for any skill level.</p>
+                    <ul class="list-unstyled mb-5 d-inline-block text-start">
+                        <li class="mb-3 d-flex align-items-center"><i
+                                class="fas fa-check-circle text-primary me-3 fs-5"></i> <span>Team Building (Up to 20
+                                people)</span></li>
+                        <li class="mb-3 d-flex align-items-center"><i
+                                class="fas fa-check-circle text-primary me-3 fs-5"></i> <span>Private Birthday
+                                Workshops</span></li>
+                        <li class="mb-3 d-flex align-items-center"><i
+                                class="fas fa-check-circle text-primary me-3 fs-5"></i> <span>Custom Project
+                                Consulting</span></li>
+                        <li class="mb-3 d-flex align-items-center"><i
+                                class="fas fa-check-circle text-primary me-3 fs-5"></i> <span>Catering Options
+                                Available</span></li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn btn-primary px-5 py-3">Inquire for Group Rates</a>
                     </div>
                 </div>
-
-                <!-- Intermediate -->
-                <div class="col-lg-4">
-                    <div class="pricing-card popular text-center">
-                        <span class="popular-badge">Most Popular</span>
-                        <h4 class="mb-2">Craftsman</h4>
-                        <p class="text-secondary small mb-4">Serious skill building</p>
-                        <h2 class="fw-bold display-5 mb-4">$899</h2>
-                        <ul class="list-unstyled text-start mb-5 d-inline-block mx-auto">
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Intermediate Course (12
-                                Weeks)</li>
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 4 Complex Projects</li>
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Open Workshop Access</li>
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 1-on-1 Mentorship</li>
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Material Discount (10%)</li>
-                        </ul>
-                        <a href="register.html" class="btn btn-primary w-100">Enroll Now</a>
-                    </div>
-                </div>
-
-                <!-- Professional -->
-                <div class="col-lg-4">
-                    <div class="pricing-card text-center">
-                        <h4 class="mb-2">Master</h4>
-                        <p class="text-secondary small mb-4">Career focused</p>
-                        <h2 class="fw-bold display-5 mb-4">$4,500</h2>
-                        <ul class="list-unstyled text-start mb-5 d-inline-block mx-auto">
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Full Diploma (6 Months)</li>
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Portfolio Development</li>
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Business of Woodworking</li>
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Dedicated Bench Space</li>
-                            <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Lifetime Alumni Access</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-outline-dark w-100">Contact Us</a>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -199,7 +269,7 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <h3 class="mb-4 text-white font-serif">WOODCRAFT ACADEMY</h3>
+                    <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45" class="mb-4">
                     <p class="opacity-75">Mastering Wood. Shaping Futures. We dedicated to preserving the art of fine
                         woodworking through structured education.</p>
                     <div class="d-flex gap-3 mt-4">
@@ -211,10 +281,12 @@
                 <div class="col-lg-2 col-md-3">
                     <h5>Company</h5>
                     <ul class="list-unstyled">
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home-2.html">Workshop</a></li>
                         <li><a href="services.html">Courses</a></li>
-                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-3">

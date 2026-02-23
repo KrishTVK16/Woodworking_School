@@ -19,6 +19,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
     <style>
         body {
             background-color: var(--tertiary);
@@ -44,34 +47,36 @@
 
     <div class="auth-card animate-up">
         <div class="text-center mb-5">
-            <h2 class="font-serif fw-bold mb-0 text-secondary">WOODCRAFT ACADEMY</h2>
-            <p class="text-secondary opacity-75 small letter-spacing mt-2">NEW STUDENT APPLICATION</p>
+            <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="55" class="mb-2">
+            </a>
+            <p class="text-dark fw-bold small letter-spacing mt-2">NEW STUDENT APPLICATION</p>
         </div>
 
         <form action="login.html">
             <div class="row g-3 mb-3">
                 <div class="col-md-6">
-                    <label class="form-label text-secondary small text-uppercase fw-bold">First Name</label>
+                    <label class="form-label text-dark small text-uppercase fw-bold">First Name</label>
                     <input type="text" class="form-control" placeholder="John">
                 </div>
                 <div class="col-md-6">
-                    <label class="form-label text-secondary small text-uppercase fw-bold">Last Name</label>
+                    <label class="form-label text-dark small text-uppercase fw-bold">Last Name</label>
                     <input type="text" class="form-control" placeholder="Doe">
                 </div>
             </div>
 
             <div class="mb-3">
-                <label class="form-label text-secondary small text-uppercase fw-bold">Email Address</label>
+                <label class="form-label text-dark small text-uppercase fw-bold">Email Address</label>
                 <input type="email" class="form-control" placeholder="student@example.com">
             </div>
 
             <div class="mb-3">
-                <label class="form-label text-secondary small text-uppercase fw-bold">Create Password</label>
+                <label class="form-label text-dark small text-uppercase fw-bold">Create Password</label>
                 <input type="password" class="form-control" placeholder="••••••••">
             </div>
 
             <div class="mb-4">
-                <label class="form-label text-secondary small text-uppercase fw-bold">Interest Level</label>
+                <label class="form-label text-dark small text-uppercase fw-bold">Interest Level</label>
                 <select class="form-select">
                     <option>Hobbyist (Weekends)</option>
                     <option>Serious Amateur</option>
@@ -79,13 +84,16 @@
                 </select>
             </div>
 
-            <button type="submit" class="btn btn-primary w-100 py-3 mb-3">Create Account</button>
-            <p class="text-center small text-secondary">
+            <button type="submit" class="btn btn-outline-secondary w-100 py-3 mb-3 fw-bold"
+                style="border-width: 2px;">Sign Up</button>
+            <p class="text-center small text-dark fw-bold">
                 Already have an account? <a href="login.html" class="text-primary fw-bold">Sign in</a>
             </p>
         </form>
     </div>
 
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

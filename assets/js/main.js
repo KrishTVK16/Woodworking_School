@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if(savedTheme === 'dark') {
             document.body.classList.add('dark-mode');
             themeToggle.innerHTML = '☀️';
+        } else if (savedTheme === 'light') {
+            document.body.classList.remove('dark-mode');
+            themeToggle.innerHTML = '🌙';
         }
     }
 

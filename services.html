@@ -21,6 +21,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 </head>
 
 <body>
@@ -28,7 +31,9 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">WOODCRAFT ACADEMY</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45">
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#mobileMenu">
                 <span class="navbar-toggler-icon"></span>
@@ -39,24 +44,30 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="home-2.html">Workshop</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" href="services.html">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Projects</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link nav-btn" href="dashboard.html">Dashboard</a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center gap-3">
-                    <a href="login.html" class="nav-link m-0 fw-bold">Login</a>
-                    <a href="register.html" class="nav-link m-0 fw-bold">Signup</a>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="login.html" class="nav-link nav-btn m-0">Login</a>
+                    <a href="register.html" class="nav-link nav-btn m-0">Signup</a>
                     <a href="#" id="theme-toggle" class="nav-link m-0 fs-5">🌙</a>
                 </div>
             </div>
@@ -66,29 +77,32 @@
     <!-- Mobile Menu Offcanvas -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title font-serif fw-bold">Menu</h5>
+            <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="40">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="nav flex-column gap-3">
-                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="services.html">Courses</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="pricing.html">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Workshop</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                 <hr>
-                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="login.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="register.html">Signup</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn mb-2" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn mb-2" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn" href="register.html">Signup</a></li>
             </ul>
         </div>
     </div>
 
     <!-- Page Header -->
-    <header class="section-padding pb-0 pt-5 mt-5">
-        <div class="container text-center animate-up">
+    <header class="page-header hero-services text-center">
+        <div class="container animate-up">
             <h6 class="text-primary text-uppercase letter-spacing mb-3">Curriculum</h6>
             <h1 class="display-4 fw-bold">Courses & Training Programs</h1>
-            <p class="lead text-secondary mx-auto mt-3" style="max-width: 700px;">From weekend workshops to
+            <p class="lead text-white mx-auto mt-3 fw-bold" style="max-width: 700px;">From weekend workshops to
                 full-semester diplomas. Find the path that fits your goals.</p>
         </div>
     </header>
@@ -101,16 +115,15 @@
                 <!-- Course 1 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="course-card">
-                        <div class="course-img"
-                            style="background-image: url('https://images.unsplash.com/photo-1610555356070-d0efb6505f81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="course-img" style="background-image: url('assets/images/foundation.jfif');">
                         </div>
                         <div class="course-body d-flex flex-column">
                             <div class="d-flex justify-content-between mb-3">
                                 <span class="badge bg-secondary">Beginner</span>
-                                <span class="text-muted"><i class="far fa-clock me-1"></i> 4 Weeks</span>
+                                <span class="text-dark fw-bold"><i class="far fa-clock me-1"></i> 4 Weeks</span>
                             </div>
                             <h4 class="mb-3">Foundation of Joinery</h4>
-                            <p class="text-secondary small mb-4 flex-grow-1">Learn the essential hand-tool skills. Build
+                            <p class="text-dark small mb-4 flex-grow-1">Learn the essential hand-tool skills. Build
                                 a precise dovetail box and a mallet.</p>
                             <div class="d-flex justify-content-between align-items-center mt-auto border-top pt-3">
                                 <span class="course-price">$299</span>
@@ -129,10 +142,10 @@
                         <div class="course-body d-flex flex-column">
                             <div class="d-flex justify-content-between mb-3">
                                 <span class="badge bg-primary">Intermediate</span>
-                                <span class="text-muted"><i class="far fa-clock me-1"></i> 8 Weeks</span>
+                                <span class="text-dark fw-bold"><i class="far fa-clock me-1"></i> 8 Weeks</span>
                             </div>
                             <h4 class="mb-3">Furniture Design I</h4>
-                            <p class="text-secondary small mb-4 flex-grow-1">Design and build a solid wood coffee table.
+                            <p class="text-dark small mb-4 flex-grow-1">Design and build a solid wood coffee table.
                                 Covers machinery and finishing.</p>
                             <div class="d-flex justify-content-between align-items-center mt-auto border-top pt-3">
                                 <span class="course-price">$599</span>
@@ -154,7 +167,7 @@
                                 <span class="text-muted"><i class="far fa-clock me-1"></i> 12 Weeks</span>
                             </div>
                             <h4 class="mb-3">Master Cabinetry</h4>
-                            <p class="text-secondary small mb-4 flex-grow-1">Complex casework, drawer fitting, and
+                            <p class="text-dark small mb-4 flex-grow-1">Complex casework, drawer fitting, and
                                 advanced veneering techniques.</p>
                             <div class="d-flex justify-content-between align-items-center mt-auto border-top pt-3">
                                 <span class="course-price">$899</span>
@@ -167,8 +180,7 @@
                 <!-- Course 4 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="course-card">
-                        <div class="course-img"
-                            style="background-image: url('https://images.unsplash.com/photo-1549429188-75c0414777d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="course-img" style="background-image: url('assets/images/spoon.jfif');">
                         </div>
                         <div class="course-body d-flex flex-column">
                             <div class="d-flex justify-content-between mb-3">
@@ -176,7 +188,7 @@
                                 <span class="text-muted"><i class="far fa-clock me-1"></i> 2 Days</span>
                             </div>
                             <h4 class="mb-3">Spoon Carving</h4>
-                            <p class="text-secondary small mb-4 flex-grow-1">Relaxing and meditative. Learn to carve
+                            <p class="text-dark small mb-4 flex-grow-1">Relaxing and meditative. Learn to carve
                                 functional spoons from green wood.</p>
                             <div class="d-flex justify-content-between align-items-center mt-auto border-top pt-3">
                                 <span class="course-price">$120</span>
@@ -189,8 +201,7 @@
                 <!-- Course 5 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="course-card">
-                        <div class="course-img"
-                            style="background-image: url('https://images.unsplash.com/photo-1627931327976-508b5f396956?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="course-img" style="background-image: url('assets/images/pooshing.jfif');">
                         </div>
                         <div class="course-body d-flex flex-column">
                             <div class="d-flex justify-content-between mb-3">
@@ -239,7 +250,7 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <h3 class="mb-4 text-white font-serif">WOODCRAFT ACADEMY</h3>
+                    <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45" class="mb-4">
                     <p class="opacity-75">Mastering Wood. Shaping Futures. We dedicated to preserving the art of fine
                         woodworking through structured education.</p>
                     <div class="d-flex gap-3 mt-4">
@@ -251,10 +262,12 @@
                 <div class="col-lg-2 col-md-3">
                     <h5>Company</h5>
                     <ul class="list-unstyled">
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home-2.html">Workshop</a></li>
                         <li><a href="services.html">Courses</a></li>
-                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-3">

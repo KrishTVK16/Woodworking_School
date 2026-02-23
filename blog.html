@@ -22,6 +22,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
     <style>
         .blog-card-img {
             height: 250px;
@@ -52,7 +55,9 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">WOODCRAFT ACADEMY</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45">
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#mobileMenu">
                 <span class="navbar-toggler-icon"></span>
@@ -63,24 +68,30 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="home-2.html">Workshop</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="services.html">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Projects</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link nav-btn" href="dashboard.html">Dashboard</a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center gap-3">
-                    <a href="login.html" class="nav-link m-0 fw-bold">Login</a>
-                    <a href="register.html" class="nav-link m-0 fw-bold">Signup</a>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="login.html" class="nav-link nav-btn m-0">Login</a>
+                    <a href="register.html" class="nav-link nav-btn m-0">Signup</a>
                     <a href="#" id="theme-toggle" class="nav-link m-0 fs-5">🌙</a>
                 </div>
             </div>
@@ -90,29 +101,32 @@
     <!-- Mobile Menu Offcanvas -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title font-serif fw-bold">Menu</h5>
+            <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="40">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="nav flex-column gap-3">
-                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="services.html">Courses</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="pricing.html">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Workshop</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                 <hr>
-                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="login.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="register.html">Signup</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn mb-2" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn mb-2" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn" href="register.html">Signup</a></li>
             </ul>
         </div>
     </div>
 
     <!-- Page Header -->
-    <header class="section-padding pb-0 pt-5 mt-5">
-        <div class="container text-center animate-up">
+    <header class="page-header hero-blog text-center">
+        <div class="container animate-up">
             <h6 class="text-primary text-uppercase letter-spacing mb-3">The Journal</h6>
             <h1 class="display-4 fw-bold">Knowledge & Craft</h1>
-            <p class="lead text-secondary mx-auto mt-3" style="max-width: 700px;">Stories from the workshop.</p>
+            <p class="lead text-white mx-auto mt-3 fw-bold" style="max-width: 700px;">Stories from the workshop.</p>
         </div>
     </header>
 
@@ -129,9 +143,10 @@
                                 alt="Featured" class="w-100 object-fit-cover" style="height: 400px;">
                         </div>
                         <div class="col-lg-6 p-5">
-                            <div class="blog-meta">Technique • 5 Min Read</div>
+                            <div class="blog-meta text-dark fw-bold">Technique • 5 Min Read</div>
                             <h2 class="mb-3">Mastering the Hand Plane: Setup and Usage</h2>
-                            <p class="text-secondary mb-4">Before you can take finest shavings, you must understand the
+                            <p class="text-dark mb-4 fw-bold">Before you can take finest shavings, you must understand
+                                the
                                 geometry of your plane. Learn how to sharpen, cap-iron set, and tune your sole for
                                 perfect results.</p>
                             <a href="blog-details.html" class="btn btn-outline-dark">Read Article</a>
@@ -142,9 +157,8 @@
                 <!-- Post 1 -->
                 <div class="col-md-4">
                     <div class="blog-card">
-                        <a href="blog-details.html"><img
-                                src="https://images.unsplash.com/photo-1549429188-75c0414777d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                                class="blog-card-img" alt="Post 1"></a>
+                        <a href="blog-details.html"><img src="assets/images/Sarah.jfif" class="blog-card-img"
+                                alt="Post 1"></a>
                         <div class="blog-meta">Student Spotlight • Jan 20, 2026</div>
                         <h4 class="mb-3"><a href="blog-details.html" class="text-dark">From IT to Woodworking: Sarah's
                                 Journey</a></h4>
@@ -205,7 +219,7 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <h3 class="mb-4 text-white font-serif">WOODCRAFT ACADEMY</h3>
+                    <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45" class="mb-4">
                     <p class="opacity-75">Mastering Wood. Shaping Futures. We dedicated to preserving the art of fine
                         woodworking through structured education.</p>
                     <div class="d-flex gap-3 mt-4">
@@ -217,10 +231,12 @@
                 <div class="col-lg-2 col-md-3">
                     <h5>Company</h5>
                     <ul class="list-unstyled">
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home-2.html">Workshop</a></li>
                         <li><a href="services.html">Courses</a></li>
-                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-3">

@@ -1,0 +1,74 @@
+<svg width="180" height="55" viewBox="0 0 180 55" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Wood Gradient -->
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8A97E"/>
+      <stop offset="100%" stop-color="#A68A64"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Badge Background -->
+  <rect width="180" height="55" rx="6" fill="#1C1C1C"/>
+
+  <!-- Saw Blade -->
+  <circle cx="26" cy="27" r="15"
+          fill="none"
+          stroke="#F5F1EB"
+          stroke-width="4"
+          stroke-dasharray="3 3"/>
+
+  <!-- Hammer Icon -->
+  <!-- Handle -->
+  <rect x="24" y="20" width="4" height="16"
+        fill="#C8A97E"
+        transform="rotate(-35 26 28)"
+        rx="1"/>
+
+  <!-- Hammer Head -->
+  <rect x="20" y="18" width="12" height="5"
+        fill="#C8A97E"
+        transform="rotate(-35 26 28)"
+        rx="1"/>
+
+  <!-- Center Bar -->
+  <rect x="38" y="18" width="135" height="20"
+        rx="4"
+        fill="url(#woodGrad)"
+        stroke="#F5F1EB"
+        stroke-width="2"/>
+
+  <!-- Top Tag -->
+  <rect x="80" y="6" width="60" height="12"
+        rx="3"
+        fill="#7A5C3D"/>
+
+  <text x="88" y="15"
+        font-family="Georgia, serif"
+        font-size="8"
+        fill="#F5F1EB"
+        letter-spacing="1">
+        EST. 2010
+  </text>
+
+  <!-- Title -->
+  <text x="48" y="32"
+        font-family="Georgia, serif"
+        font-size="16"
+        font-weight="700"
+        fill="#1C1C1C"
+        letter-spacing="1">
+        WOODCRAFT
+  </text>
+
+  <!-- Subtitle -->
+  <text x="105" y="47"
+        font-family="Georgia, serif"
+        font-size="10"
+        fill="#C8A97E"
+        text-anchor="middle"
+        letter-spacing="2">
+        ACADEMY
+  </text>
+
+</svg>

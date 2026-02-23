@@ -101,35 +101,50 @@ ul {
     font-size: 0.95rem;
     letter-spacing: 0.5px;
     transition: var(--transition);
-    border: none;
+    border: 2px solid transparent;
     text-transform: uppercase;
 }
 
 .btn-primary {
     background-color: var(--primary);
     color: var(--white);
+    border-color: var(--primary);
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary);
-    color: var(--white);
+    background-color: transparent;
+    color: var(--secondary);
+    border-color: var(--secondary);
     transform: translateY(-2px);
 }
 
 .btn-outline-dark {
-    border: 1px solid var(--dark);
+    border: 2px solid var(--dark);
     color: var(--dark);
 }
 
 .btn-outline-dark:hover {
     background-color: var(--dark);
+    border-color: var(--dark);
     color: var(--white);
+}
+
+.btn-outline-light {
+    border: 2px solid var(--white);
+    color: var(--white);
+    background: transparent;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--white);
+    color: var(--dark);
+    border-color: var(--white);
 }
 
 /* Header */
 .navbar {
     padding: 0.5rem 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: transparent;
     transition: var(--transition);
     position: fixed;
     width: 100%;
@@ -158,7 +173,7 @@ ul {
 .nav-link {
     font-weight: 600;
     font-size: 0.95rem;
-    color: var(--secondary);
+    color: var(--dark);
     margin: 0 10px;
     position: relative;
 }
@@ -176,7 +191,7 @@ ul {
 /* Navigation Buttons with Borders */
 .nav-btn {
     padding: 0.4rem 1.2rem !important;
-    border: 1px solid var(--secondary);
+    border: 2px solid var(--secondary);
     border-radius: 25px;
     color: var(--secondary) !important;
     font-weight: 600 !important;
@@ -193,7 +208,12 @@ ul {
 /* Support for Dark Mode Nav Buttons */
 .navbar-dark .nav-btn {
     border-color: var(--white);
-    color: burlywood !important;
+    color: var(--white) !important;
+}
+
+body.dark-mode .nav-btn {
+    border-color: var(--white);
+    color: var(--white) !important;
 }
 
 .navbar-dark .nav-btn:hover {
@@ -217,130 +237,17 @@ ul {
 }
 
 /* Hero Section */
-.hero,
-.hero-2 {
+.hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(rgba(87, 67, 67, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1497219055242-93359eeed651?q=80&w=2070');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
     background-color: var(--dark);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: var(--white);
     padding-top: 80px;
-}
-
-.hero-2 {
-    background-image: linear-gradient(rgba(87, 67, 67, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero2.avif');
-}
-
-/* Page Headers for Internal Pages */
-.page-header {
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: var(--white);
-    position: relative;
-    padding-top: 100px;
-    margin-bottom: 5rem;
-}
-
-.page-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-    z-index: 1;
-}
-
-.page-header .container {
-    position: relative;
-    z-index: 2;
-}
-
-/* Hero Categories */
-.hero-about {
-    background-image: url('https://images.unsplash.com/photo-1542596594-649edbc13630?q=80&w=2070');
-}
-
-.section-bg-overlay {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: var(--white) !important;
-}
-
-.section-bg-overlay::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
-    z-index: 1;
-}
-
-.section-bg-overlay .container {
-    position: relative;
-    z-index: 2;
-}
-
-.section-bg-overlay h3,
-.section-bg-overlay .lead,
-.section-bg-overlay p,
-.section-bg-overlay h2,
-.section-bg-overlay small {
-    color: var(--white) !important;
-}
-
-.hero-services {
-    background-image: url('https://images.unsplash.com/photo-1594411133036-66666b66e3fb?q=80&w=2070');
-}
-
-.hero-contact {
-    background-image: url('https://images.unsplash.com/photo-1413808139566-ae2813589b9d?q=80&w=2070');
-}
-
-.hero-blog {
-    background-image: url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=2070');
-}
-
-.hero-pricing {
-    background-image: url('https://images.unsplash.com/photo-1426927308491-6380b6a9936f?q=80&w=2070');
-}
-
-.hero-details {
-    background-image: url('https://images.unsplash.com/photo-1594411133036-66666b66e3fb?q=80&w=2070');
-}
-
-/* Coming Soon & 404 Specifics */
-.coming-soon-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1549429188-75c0414777d4?q=80&w=2070');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
-}
-
-.error-404-bg {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1426927308491-6380b6a9936f?q=80&w=2070');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-
-.hero-coming {
-    background-image: url('https://images.unsplash.com/photo-1549429188-75c0414777d4?q=80&w=2070');
 }
 
 .hero h1 {
@@ -396,62 +303,6 @@ ul {
     font-weight: 500;
     max-width: 600px;
     margin: 0 auto;
-}
-
-/* Project Gallery Refinement */
-.row.g-0 .project-item {
-    margin-bottom: 0;
-    border-radius: 0;
-}
-
-.row.g-0 .project-item img {
-    height: 400px;
-    object-fit: cover;
-}
-
-/* Timber Library Section */
-.timber-card {
-    position: relative;
-    height: 350px;
-    overflow: hidden;
-    border-radius: var(--border-radius);
-    background-size: cover;
-    background-position: center;
-    transition: var(--transition);
-    border: 2px solid var(--black);
-}
-
-.timber-card:hover {
-    transform: scale(1.02);
-}
-
-.timber-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.85);
-    padding: 1.5rem;
-    color: var(--white);
-    transform: translateY(60%);
-    transition: var(--transition);
-}
-
-.timber-card:hover .timber-info {
-    transform: translateY(0);
-}
-
-.timber-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: var(--primary);
-}
-
-.timber-traits {
-    font-size: 0.85rem;
-    opacity: 0.8;
-    line-height: 1.4;
 }
 
 /* Project Gallery */
@@ -600,7 +451,7 @@ body.dark-mode .navbar.scrolled {
 }
 
 body.dark-mode .nav-link {
-    color: burlywood;
+    color: var(--white);
 }
 
 body.dark-mode .feature-card,
@@ -616,7 +467,7 @@ body.dark-mode .offcanvas {
 }
 
 body.dark-mode .offcanvas .nav-link {
-    color: burlywood !important;
+    color: var(--white) !important;
 }
 
 body.dark-mode .offcanvas .btn-close {
@@ -645,10 +496,34 @@ body.dark-mode .form-label {
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
-body.dark-mode .auth-card {
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: var(--white);
+}
+
+body.dark-mode .bg-tertiary,
+body.dark-mode .bg-light {
+    background-color: var(--dark) !important;
+}
+
+body.dark-mode .bg-white {
+    background-color: var(--dark-grey) !important;
+}
+
+body.dark-mode .auth-card,
+body.dark-mode .stat-card,
+body.dark-mode .pricing-card,
+body.dark-mode .blog-card,
+body.dark-mode .testimonial-card {
     background: var(--dark-grey);
     color: var(--white);
+    border-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .section-title p {
+    color: var(--tertiary) !important;
 }
 
 body.dark-mode .sidebar {
@@ -661,7 +536,7 @@ body.dark-mode .sidebar .nav-link {
 }
 
 body.dark-mode .sidebar .nav-link.active {
-    color: burlywood !important;
+    color: var(--white) !important;
     background: rgba(255, 255, 255, 0.05);
 }
 
@@ -695,4 +570,56 @@ body.dark-mode .table th {
     background-color: var(--white);
     border-color: var(--primary);
     box-shadow: none;
+}
+
+/* Final Theme & Button Refinements */
+body.dark-mode footer {
+    background-color: var(--dark-grey);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--white);
+    border: 2px solid var(--secondary);
+}
+
+.btn-secondary:hover {
+    background-color: transparent;
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-light {
+    background-color: var(--tertiary);
+    color: var(--dark);
+    border: 2px solid var(--tertiary);
+}
+
+.btn-light:hover {
+    background-color: transparent;
+    color: var(--dark);
+    border-color: var(--dark);
+}
+
+.btn-dark {
+    background-color: var(--dark);
+    color: var(--white);
+    border: 2px solid var(--dark);
+}
+
+.btn-dark:hover {
+    background-color: transparent;
+    color: var(--dark);
+    border-color: var(--dark);
+}
+
+body.dark-mode .btn-dark {
+    border-color: var(--white);
+}
+
+/* Ensure all buttons have 2px borders by default if class is matched */
+[class^="btn-"],
+[class*=" btn-"] {
+    border-width: 2px !important;
 }

@@ -22,31 +22,30 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
     <style>
-        /* Specific overrides for Home 2 */
-        body {
+        /* Specific overrides for Home 2 (Workshop View) */
+        body.dark-mode {
             background-color: var(--dark);
             color: var(--light-grey);
         }
 
-        .hero-2 {
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1574515598858-294380eb9a27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            color: var(--white);
-        }
 
-        .feature-card {
+        body.dark-mode .feature-card {
             background: #2C2C2C;
             border-color: rgba(255, 255, 255, 0.05);
             color: var(--light-grey);
         }
 
-        .feature-card:hover {
+        body.dark-mode .feature-card:hover {
             border-color: var(--primary);
+        }
+
+        /* Light Mode safe-guards for specialized sections */
+        .feature-card {
+            transition: var(--transition);
         }
     </style>
 </head>
@@ -56,7 +55,9 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand text-white" href="index.html">WOODCRAFT ACADEMY</a>
+            <a class="navbar-brand text-white" href="index.html">
+                <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45">
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#mobileMenu">
                 <span class="navbar-toggler-icon"></span>
@@ -64,27 +65,33 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white-50 active" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white-50" href="services.html">Courses</a>
+                        <a class="nav-link active" href="home-2.html">Workshop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white-50" href="services.html">Projects</a>
+                        <a class="nav-link" href="services.html">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white-50" href="blog.html">Blog</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white-50" href="pricing.html">Pricing</a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white-50" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn" href="dashboard.html">Dashboard</a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center gap-3">
-                    <a href="login.html" class="nav-link m-0 fw-bold text-white">Login</a>
-                    <a href="register.html" class="nav-link m-0 fw-bold text-white">Signup</a>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="login.html" class="nav-link nav-btn m-0 fw-bold text-white">Login</a>
+                    <a href="register.html" class="nav-link nav-btn m-0 fw-bold text-white">Signup</a>
                     <a href="#" id="theme-toggle" class="nav-link m-0 fs-5 text-warning">☀️</a>
                 </div>
             </div>
@@ -94,19 +101,23 @@
     <!-- Mobile Menu Offcanvas -->
     <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mobileMenu">
         <div class="offcanvas-header border-bottom border-secondary">
-            <h5 class="offcanvas-title font-serif fw-bold">Menu</h5>
+            <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="40">
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="nav flex-column gap-3">
-                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="services.html">Courses</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="pricing.html">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="home-2.html">Workshop</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                 <hr class="border-secondary">
-                <li class="nav-item"><a class="nav-link text-white fw-bold" href="login.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link text-white fw-bold" href="register.html">Signup</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn mb-2" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item"><a class="nav-link nav-btn mb-2" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn" href="register.html">Signup</a></li>
             </ul>
         </div>
     </div>
@@ -117,8 +128,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-8">
                     <span class="text-primary text-uppercase fw-bold letter-spacing mb-3 d-block">The Workshop</span>
-                    <h1 class="display-2 fw-bold mb-4">Respect the Grain.<br>Master the Tool.</h1>
-                    <p class="lead text-white-50 mb-5">
+                    <h1 class="display-2 text-white mb-4">Respect the Grain.<br>Master the Tool.</h1>
+                    <p class="lead text-white mb-5" style="font-weight: 500;">
                         Immerse yourself in a real artisan environment. Learn the ancient ways of joinery combined with
                         modern precision.
                     </p>
@@ -133,14 +144,15 @@
         <div class="container">
             <div class="section-title">
                 <h2 class="text-white">The Artisan Process</h2>
-                <p class="text-white-50">It's not just about cutting wood. It's about patience, design, and execution.
+                <p class="text-white fw-bold">It's not just about cutting wood. It's about patience, design, and
+                    execution.
                 </p>
             </div>
 
             <div class="row g-5 align-items-center mb-5">
                 <div class="col-md-6 order-md-2">
-                    <img src="https://images.unsplash.com/photo-1622383563227-04401bb4a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Process" class="img-fluid rounded border-secondary border">
+                    <img src="assets/images/TimberGrading.jpg" alt="Process"
+                        class="img-fluid rounded border-secondary border">
                 </div>
                 <div class="col-md-6 order-md-1">
                     <h3 class="text-white">1. Selection & Preparation</h3>
@@ -156,8 +168,8 @@
 
             <div class="row g-5 align-items-center">
                 <div class="col-md-6">
-                    <img src="https://images.unsplash.com/photo-1503602642458-2321114453ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Tools" class="img-fluid rounded border-secondary border">
+                    <img src="assets/images/HandToolMastery.jpg" alt="Tools"
+                        class="img-fluid rounded border-secondary border">
                 </div>
                 <div class="col-md-6">
                     <h3 class="text-white">2. Precision Joinery</h3>
@@ -174,7 +186,7 @@
     </section>
 
     <!-- Tools Grid -->
-    <section class="section-padding" style="background-color: #222;">
+    <section class="section-padding bg-dark">
         <div class="container">
             <div class="section-title">
                 <h2 class="text-white">Our Arsenal</h2>
@@ -209,12 +221,109 @@
         </div>
     </section>
 
+    <!-- The Source: Understanding Trees -->
+    <section class="section-padding section-bg-overlay"
+        style="background-image: url('assets/images/TimberGrading.jpg');">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">The Source: Understanding Trees</h2>
+                <p class="text-white-50">Every masterpiece begins in the forest. Learn to read the life story of the
+                    tree through its grain.</p>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6">
+                    <img src="assets/images/trees_properties.jpg" alt="Trees and Wood Properties"
+                        class="img-fluid rounded border-secondary border">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-white">Nature's Engineering</h3>
+                    <p class="text-white-50">We explore the biological marvel of trees and how their growth environments
+                        dictate the strength and beauty of the timber we use.</p>
+                    <ul class="text-primary list-unstyled mt-3">
+                        <li class="mb-2"><i class="fas fa-leaf me-2"></i> Species Identification</li>
+                        <li class="mb-2"><i class="fas fa-tree me-2"></i> Growth Ring Analysis</li>
+                        <li class="mb-2"><i class="fas fa-tint me-2"></i> Moisture Content Theory</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wood Wisdom: The Sage's Guide -->
+    <section class="section-padding section-bg-overlay" style="background-image: url('assets/images/book.jfif');">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">Wood Wisdom: The Sage's Guide</h2>
+                <p class="text-white-50">The true craftsman doesn't just work wood; they listen to it.</p>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <img src="assets/images/HandToolMastery.jpg" alt="Wood Wisdom"
+                        class="img-fluid rounded border-secondary border">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3 class="text-white">Generations of Knowledge</h3>
+                    <p class="text-white-50">Deepen your connection with the material. Our "Sage" modules cover the
+                        esoteric knowledge of wood behavior, traditional seasoning, and the philosophy of the grain.</p>
+                    <div class="p-4 bg-dark rounded border border-secondary mt-4">
+                        <blockquote class="blockquote mb-0 text-white-50 italic">
+                            <p>"Wood is a living thing even after it is cut. Respect its movement, and it will serve you
+                                for centuries."</p>
+                            <footer class="blockquote-footer mt-2">The Master Sage</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Good Wood Works -->
+    <section class="section-padding section-bg-overlay" style="background-image: url('assets/images/redak.jfif');">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">Good Wood Works</h2>
+                <p class="text-white-50">A showcase of final projects where the grain, the tool, and the artisan align.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card h-100 p-4 rounded border border-secondary bg-dark shadow-lg"
+                        style="backdrop-filter: blur(10px); background: rgba(0,0,0,0.7) !important;">
+                        <img src="assets/images/TheHeirloomTable.jpg" alt="Project 1" class="img-fluid rounded mb-3">
+                        <h4 class="text-white">The Heirloom Table</h4>
+                        <p class="text-white-50">A mortise and tenon masterpiece crafted from salvaged White Oak.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card h-100 p-4 rounded border border-secondary bg-dark shadow-lg"
+                        style="backdrop-filter: blur(10px); background: rgba(0,0,0,0.7) !important;">
+                        <img src="assets/images/ArtisanCabinetry.jpg" alt="Project 2" class="img-fluid rounded mb-3">
+                        <h4 class="text-white">Artisan Cabinetry</h4>
+                        <p class="text-white-50">Exploring Japanese joinery in contemporary storage design.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card h-100 p-4 rounded border border-secondary bg-dark shadow-lg"
+                        style="backdrop-filter: blur(10px); background: rgba(0,0,0,0.7) !important;">
+                        <img src="assets/images/SculptedSeating.jpg" alt="Project 3" class="img-fluid rounded mb-3">
+                        <h4 class="text-white">Sculpted Seating</h4>
+                        <p class="text-white-50">Where ergonomics meets the raw beauty of hand-planed Walnut.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-primary px-5 py-3">View Our Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <h3 class="mb-4 text-white font-serif">WOODCRAFT ACADEMY</h3>
+                    <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45" class="mb-4">
                     <p class="opacity-75">Mastering Wood. Shaping Futures. We dedicated to preserving the art of fine
                         woodworking through structured education.</p>
                     <div class="d-flex gap-3 mt-4">
@@ -226,10 +335,12 @@
                 <div class="col-lg-2 col-md-3">
                     <h5>Company</h5>
                     <ul class="list-unstyled">
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home-2.html">Workshop</a></li>
                         <li><a href="services.html">Courses</a></li>
-                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-3">
