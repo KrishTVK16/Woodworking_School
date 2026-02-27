@@ -41,6 +41,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // Mirror desktop active page into offcanvas menu (mobile/tablet)
+    const mobileMenu = document.getElementById('mobileMenu');
+    const desktopActiveLink = document.querySelector('.navbar .navbar-collapse .navbar-nav .nav-link.active[href]');
+    if (mobileMenu && desktopActiveLink) {
+        const activeHref = desktopActiveLink.getAttribute('href');
+        const mobileLinks = mobileMenu.querySelectorAll('.offcanvas-body .nav-link[href]');
+
+        mobileLinks.forEach(function(link) {
+            link.classList.remove('active');
+        });
+
+        mobileMenu.querySelectorAll('.offcanvas-body .nav-link[href="' + activeHref + '"]').forEach(function(link) {
+            link.classList.add('active');
+        });
+    }
+
     // Initialize Bootstrap tooltips/popovers if needed
     // const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     // const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

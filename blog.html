@@ -26,6 +26,10 @@
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
     <style>
+        .blog-card {
+            height: 100%;
+        }
+
         .blog-card-img {
             height: 250px;
             width: 100%;
@@ -46,6 +50,16 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
             margin-bottom: 0.5rem;
+        }
+
+        body.dark-mode .blog-card h4 a {
+            color: var(--tertiary) !important;
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .blog-post-col {
+                width: 50%;
+            }
         }
     </style>
 </head>
@@ -157,7 +171,7 @@
                 </div>
 
                 <!-- Post 1 -->
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 blog-post-col">
                     <div class="blog-card">
                         <a href="blog-details.html"><img src="assets/images/Sarah.jfif" class="blog-card-img"
                                 alt="Post 1"></a>
@@ -170,7 +184,7 @@
                 </div>
 
                 <!-- Post 2 -->
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 blog-post-col">
                     <div class="blog-card">
                         <a href="blog-details.html"><img
                                 src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -184,7 +198,7 @@
                 </div>
 
                 <!-- Post 3 -->
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 blog-post-col">
                     <div class="blog-card">
                         <a href="blog-details.html"><img
                                 src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"

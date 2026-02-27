@@ -68,6 +68,20 @@
             object-fit: cover;
             width: 100%;
         }
+
+        .pricing-card .text-secondary,
+        .pricing-card ul li {
+            color: var(--secondary) !important;
+        }
+
+        .custom-events-content .text-secondary,
+        .custom-events-content ul li span {
+            color: var(--secondary) !important;
+        }
+
+        body.dark-mode .custom-events-content p.lead {
+            color: var(--secondary) !important;
+        }
     </style>
 </head>
 
@@ -238,7 +252,7 @@
                     <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                         alt="Group Workshop" class="experience-img shadow-lg">
                 </div>
-                <div class="col-lg-6 text-center">
+                <div class="col-lg-6 text-center custom-events-content">
                     <h6 class="text-primary text-uppercase letter-spacing mb-3">Custom Events</h6>
                     <h2 class="display-5 fw-bold mb-4">Corporate & Group Experiences</h2>
                     <p class="lead text-secondary mb-4 mx-auto" style="max-width: 500px;">Looking for a unique
