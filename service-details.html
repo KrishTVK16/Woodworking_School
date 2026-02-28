@@ -22,6 +22,21 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <style>
+        .build-showcase-item {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .build-showcase-image {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 </head>
@@ -144,19 +159,23 @@
                     <h3 class="mb-4">What You'll Build</h3>
                     <div class="row g-4 mb-5">
                         <div class="col-md-6">
-                            <img src="https://images.unsplash.com/photo-1574515598858-294380eb9a27?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                                class="img-fluid rounded mb-3" alt="Mallet">
-                            <h5>1. Joiner's Mallet</h5>
-                            <p class="small text-dark fw-bold">Your first tool. Built from tough Beech and Walnut,
-                                customized
-                                to your grip.</p>
+                            <div class="build-showcase-item">
+                                <img src="https://cdn.shopify.com/s/files/1/0738/8754/7672/files/joinersmallet-opener.jpg?v=1692905491"
+                                    class="img-fluid build-showcase-image rounded mb-3" alt="Mallet">
+                                <h5>1. Joiner's Mallet</h5>
+                                <p class="small text-dark fw-bold mb-0">Your first tool. Built from tough Beech and Walnut,
+                                    customized
+                                    to your grip.</p>
+                            </div>
                         </div>
                         <div class="col-md-6">
-                            <img src="https://images.unsplash.com/photo-1549429188-75c0414777d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                                class="img-fluid rounded mb-3" alt="Box">
-                            <h5>2. Dovetail Box</h5>
-                            <p class="small text-muted">A keepsake box featuring hand-cut through dovetails. The
-                                ultimate test of patience.</p>
+                            <div class="build-showcase-item">
+                                <img src="https://woodworkingmasterclasses.com/wp-content/uploads/2013/05/Ricks-box-1024x684.jpg"
+                                    class="img-fluid build-showcase-image rounded mb-3" alt="Box">
+                                <h5>2. Dovetail Box</h5>
+                                <p class="small text-muted mb-0">A keepsake box featuring hand-cut through dovetails. The
+                                    ultimate test of patience.</p>
+                            </div>
                         </div>
                     </div>
 
