@@ -45,6 +45,10 @@
             min-height: 100vh;
         }
 
+        body.dark-mode .main-content {
+            background-color: transparent;
+        }
+
         .nav-link.active {
             background-color: var(--primary);
             color: var(--white) !important;
@@ -70,6 +74,10 @@
             border-radius: var(--border-radius);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
             border: 1px solid rgba(0, 0, 0, 0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         @media (max-width: 991px) {
@@ -131,9 +139,11 @@
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fas fa-envelope me-3" style="width:20px"></i> Messages</a>
             </li>
-            <li class="nav-item mt-5 pt-5 border-top border-secondary">
-                <a class="nav-link text-danger" href="index.html"><i class="fas fa-sign-out-alt me-3"
+            <li
+                class="nav-item mt-5 pt-4 border-top border-secondary d-flex align-items-center justify-content-between pe-3">
+                <a class="nav-link text-danger mb-0" href="index.html"><i class="fas fa-sign-out-alt me-3"
                         style="width:20px"></i> Logout</a>
+                <a href="#" class="theme-toggle nav-link m-0 fs-5 p-0" title="Toggle Dark Mode">🌙</a>
             </li>
         </ul>
     </nav>
@@ -162,9 +172,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-envelope me-3" style="width:20px"></i> Messages</a>
                 </li>
-                <li class="nav-item mt-5 pt-3 border-top border-secondary">
-                    <a class="nav-link text-danger" href="index.html"><i class="fas fa-sign-out-alt me-3"
+                <li
+                    class="nav-item mt-5 pt-3 border-top border-secondary d-flex align-items-center justify-content-between pe-3">
+                    <a class="nav-link text-danger mb-0" href="index.html"><i class="fas fa-sign-out-alt me-3"
                             style="width:20px"></i> Logout</a>
+                    <a href="#" class="theme-toggle nav-link m-0 fs-5 p-0" title="Toggle Dark Mode">🌙</a>
                 </li>
             </ul>
         </div>

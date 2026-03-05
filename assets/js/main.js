@@ -2,12 +2,12 @@
  * Woodcraft Academy - Main Interactions
  */
 
-document.addEventListener('DOMContentLoaded', function() {
-    
+document.addEventListener('DOMContentLoaded', function () {
+
     // Header Scroll Effect
     const navbar = document.querySelector('.navbar');
-    
-    window.addEventListener('scroll', function() {
+
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
@@ -16,29 +16,34 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Theme Toggle
-    const themeToggle = document.getElementById('theme-toggle');
-    if(themeToggle) {
-        themeToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.body.classList.toggle('dark-mode');
-            
-            // Save preference
-            const isDark = document.body.classList.contains('dark-mode');
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-            
-            // Update Icon
-            this.innerHTML = isDark ? '☀️' : '🌙';
+    const themeToggles = document.querySelectorAll('#theme-toggle, .theme-toggle');
+
+    // Load Preference globally early
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+    } else if (savedTheme === 'light') {
+        document.body.classList.remove('dark-mode');
+    }
+
+    if (themeToggles.length > 0) {
+        // Init Icons on load
+        const isDarkInitial = document.body.classList.contains('dark-mode');
+        themeToggles.forEach(t => t.innerHTML = isDarkInitial ? '☀️' : '🌙');
+
+        themeToggles.forEach(toggle => {
+            toggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.body.classList.toggle('dark-mode');
+
+                // Save preference
+                const isDark = document.body.classList.contains('dark-mode');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+                // Update Icons
+                themeToggles.forEach(t => t.innerHTML = isDark ? '☀️' : '🌙');
+            });
         });
-        
-        // Load Preference
-        const savedTheme = localStorage.getItem('theme');
-        if(savedTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-            themeToggle.innerHTML = '☀️';
-        } else if (savedTheme === 'light') {
-            document.body.classList.remove('dark-mode');
-            themeToggle.innerHTML = '🌙';
-        }
     }
 
     // Mirror desktop active page into offcanvas menu (mobile/tablet)
@@ -48,11 +53,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const activeHref = desktopActiveLink.getAttribute('href');
         const mobileLinks = mobileMenu.querySelectorAll('.offcanvas-body .nav-link[href]');
 
-        mobileLinks.forEach(function(link) {
+        mobileLinks.forEach(function (link) {
             link.classList.remove('active');
         });
 
-        mobileMenu.querySelectorAll('.offcanvas-body .nav-link[href="' + activeHref + '"]').forEach(function(link) {
+        mobileMenu.querySelectorAll('.offcanvas-body .nav-link[href="' + activeHref + '"]').forEach(function (link) {
             link.classList.add('active');
         });
     }
