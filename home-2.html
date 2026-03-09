@@ -26,40 +26,24 @@
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
     <style>
-        /* Specific overrides for Home 2 (Workshop View) */
-        body.dark-mode {
-            background-color: var(--dark);
-            color: var(--light-grey);
-        }
-
-
-        body.dark-mode .feature-card {
-            background: #2C2C2C;
-            border-color: rgba(255, 255, 255, 0.05);
-            color: var(--light-grey);
-        }
-
-        body.dark-mode .feature-card:hover {
-            border-color: var(--primary);
-        }
-
-        /* Light Mode safe-guards for specialized sections */
-        .feature-card {
-            transition: var(--transition);
+        /* Specific overrides for Home 2 (Workshop View) if needed */
+        .timber-traits {
+            /* Ensure library traits are readable on hover overlay */
+            color: var(--white) !important;
         }
     </style>
 </head>
 
-<body class="dark-mode"> <!-- Force Dark Mode Start -->
+<body>
 
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand text-white" href="index.html">
+            <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="45">
             </a>
             <div class="d-flex align-items-center gap-2 order-lg-last">
-                <a href="#" id="theme-toggle" class="nav-link m-0 fs-5 text-white">🌙</a>
+                <a href="#" id="theme-toggle" class="nav-link m-0 fs-5">🌙</a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#mobileMenu">
                     <span class="navbar-toggler-icon"></span>
@@ -93,18 +77,18 @@
                     </li>
                 </ul>
                 <div class="d-flex align-items-center gap-2">
-                    <a href="login.html" class="nav-link nav-btn m-0 fw-bold text-white d-none d-lg-flex">Login</a>
-                    <a href="register.html" class="nav-link nav-btn m-0 fw-bold text-white d-none d-lg-flex">Signup</a>
+                    <a href="login.html" class="nav-link nav-btn m-0 fw-bold d-none d-lg-flex">Login</a>
+                    <a href="register.html" class="nav-link nav-btn m-0 fw-bold d-none d-lg-flex">Signup</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Mobile Menu Offcanvas -->
-    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
         <div class="offcanvas-header border-bottom border-secondary">
             <img src="assets/images/logo.svg" alt="Woodcraft Academy" height="40">
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="nav flex-column gap-3">
@@ -142,11 +126,11 @@
     </section>
 
     <!-- The Process -->
-    <section class="section-padding bg-dark">
+    <section class="section-padding theme-section">
         <div class="container">
             <div class="section-title">
-                <h2 class="text-white">The Artisan Process</h2>
-                <p class="text-white fw-bold">It's not just about cutting wood. It's about patience, design, and
+                <h2>The Artisan Process</h2>
+                <p>It's not just about cutting wood. It's about patience, design, and
                     execution.
                 </p>
             </div>
@@ -157,7 +141,7 @@
                         class="img-fluid rounded border-secondary border">
                 </div>
                 <div class="col-md-6 order-md-1">
-                    <h3 class="text-white">1. Selection & Preparation</h3>
+                    <h3>1. Selection & Preparation</h3>
                     <p class="text-white-50">Understanding the material is the first step. We teach you how to select,
                         dry, and prepare timber for a lifetime of durability.</p>
                     <ul class="text-primary list-unstyled mt-3">
@@ -174,7 +158,7 @@
                         class="img-fluid rounded border-secondary border">
                 </div>
                 <div class="col-md-6">
-                    <h3 class="text-white">2. Precision Joinery</h3>
+                    <h3>2. Precision Joinery</h3>
                     <p class="text-white-50">No screws, no nails. Learn the art of dovetails, mortise & tenon, and
                         Japanese joinery techniques.</p>
                     <ul class="text-primary list-unstyled mt-3">
@@ -188,35 +172,35 @@
     </section>
 
     <!-- Tools Grid -->
-    <section class="section-padding bg-dark">
+    <section class="section-padding theme-section pt-0">
         <div class="container">
             <div class="section-title">
-                <h2 class="text-white">Our Arsenal</h2>
+                <h2>Our Arsenal</h2>
                 <p class="text-white-50">State of the art machinery meets traditional hand tools.</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-3 col-6">
                     <div class="text-center p-4 border border-secondary rounded h-100">
                         <i class="fas fa-hammer fa-2x text-primary mb-3"></i>
-                        <h5 class="text-white">Hand Tools</h5>
+                        <h5 class="theme-text">Hand Tools</h5>
                     </div>
                 </div>
                 <div class="col-md-3 col-6">
                     <div class="text-center p-4 border border-secondary rounded h-100">
                         <i class="fas fa-plug fa-2x text-primary mb-3"></i>
-                        <h5 class="text-white">Power Tools</h5>
+                        <h5 class="theme-text">Power Tools</h5>
                     </div>
                 </div>
                 <div class="col-md-3 col-6">
                     <div class="text-center p-4 border border-secondary rounded h-100">
                         <i class="fas fa-pencil-ruler fa-2x text-primary mb-3"></i>
-                        <h5 class="text-white">Design Lab</h5>
+                        <h5 class="theme-text">Design Lab</h5>
                     </div>
                 </div>
                 <div class="col-md-3 col-6">
                     <div class="text-center p-4 border border-secondary rounded h-100">
                         <i class="fas fa-spray-can fa-2x text-primary mb-3"></i>
-                        <h5 class="text-white">Finishing Room</h5>
+                        <h5 class="theme-text">Finishing Room</h5>
                     </div>
                 </div>
             </div>
@@ -228,7 +212,7 @@
         style="background-image: url('assets/images/TimberGrading.jpg');">
         <div class="container">
             <div class="section-title">
-                <h2 class="text-white">The Source: Understanding Trees</h2>
+                <h2>The Source: Understanding Trees</h2>
                 <p class="text-white-50">Every masterpiece begins in the forest. Learn to read the life story of the
                     tree through its grain.</p>
             </div>
@@ -238,7 +222,7 @@
                         class="img-fluid rounded border-secondary border">
                 </div>
                 <div class="col-md-6">
-                    <h3 class="text-white">Nature's Engineering</h3>
+                    <h3>Nature's Engineering</h3>
                     <p class="text-white-50">We explore the biological marvel of trees and how their growth environments
                         dictate the strength and beauty of the timber we use.</p>
                     <ul class="text-primary list-unstyled mt-3">
@@ -255,7 +239,7 @@
     <section class="section-padding section-bg-overlay" style="background-image: url('assets/images/book.jfif');">
         <div class="container">
             <div class="section-title">
-                <h2 class="text-white">Wood Wisdom: The Sage's Guide</h2>
+                <h2>Wood Wisdom: The Sage's Guide</h2>
                 <p class="text-white-50">The true craftsman doesn't just work wood; they listen to it.</p>
             </div>
             <div class="row g-5 align-items-center">
@@ -264,7 +248,7 @@
                         class="img-fluid rounded border-secondary border">
                 </div>
                 <div class="col-md-6 order-md-1">
-                    <h3 class="text-white">Generations of Knowledge</h3>
+                    <h3>Generations of Knowledge</h3>
                     <p class="text-white-50">Deepen your connection with the material. Our "Sage" modules cover the
                         esoteric knowledge of wood behavior, traditional seasoning, and the philosophy of the grain.</p>
                     <div class="p-4 bg-dark rounded border border-secondary mt-4">
@@ -280,11 +264,11 @@
     </section>
 
     <!-- Good Wood Works -->
-    <section class="section-padding section-bg-overlay" style="background-image: url('assets/images/redak.jfif');">
+    <section class="section-padding theme-section">
         <div class="container">
             <div class="section-title">
-                <h2 class="text-white">Good Wood Works</h2>
-                <p class="text-white-50">A showcase of final projects where the grain, the tool, and the artisan align.
+                <h2>Good Wood Works</h2>
+                <p>A showcase of final projects where the grain, the tool, and the artisan align.
                 </p>
             </div>
             <div class="row g-4">
